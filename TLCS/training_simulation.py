@@ -95,6 +95,7 @@ class Simulation:
         traci.close()
         simulation_time = round(timeit.default_timer() - start_time, 1)
 
+        #Train the model
         print("Training...")
         start_time = timeit.default_timer()
         for _ in range(self._training_epochs):
